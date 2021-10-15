@@ -1,0 +1,63 @@
+POST http://localhost:5000/offers
+Content-Type: application/json
+
+{
+  "id": 100,
+  "order_id": 36,
+  "executor_id": 10
+}
+
+###
+POST http://localhost:5000/orders
+Content-Type: application/json
+
+{
+  "id": 100,
+  "name": "aaaaa",
+  "description": "bbbbb",
+  "start_date": "02/08/2013",
+  "end_date": "03/28/2057",
+  "address": "yyyyy",
+  "price": 1111,
+  "customer_id": 3,
+  "executor_id": 6
+}
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "id": 100,
+  "first_name": "aa",
+  "last_name": "bb",
+  "age": 22,
+  "email": "aa@bb.com",
+  "role": "customer",
+  "phone": "111"
+}
+
+###
+GET http://localhost:5000/users
+Accept: application/json
+###
+GET http://localhost:5000/orders/100
+Accept: application/json
+###
+GET http://localhost:5000/offers/100
+Accept: application/json
+
+###
+GET http://localhost:5000/users/100
+Accept: application/json
+
+###
+
+GET http://localhost:5000/orders
+Accept: application/json
+
+###
+
+GET http://localhost:5000/offers
+Accept: application/json
+
